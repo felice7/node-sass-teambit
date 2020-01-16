@@ -1,0 +1,38 @@
+header {
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #58402c;
+  padding: 20px;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: #58402c;
+  }
+
+  a:hover {
+    color: #30488f;
+  }
+  .main-menu {
+    display: inline-block;
+  }
+}
+.link-menu {
+  display: inline-block;
+  float: right;
+}
+.sign-up {
+  padding: 0 20px;
+  line-height: 35px;
+  background-color: #30488f;
+  color: white;
+  border-radius: 7px;
+  border: none;
+}
+
+  &:hover {
+    color: white;
+  }
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #58402c;
+  font-family: "Raleway", sans-serif;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #58402c;
+  padding: 20px;
+}
+
+header li {
+  display: inline-block;
+}
+
+header a {
+  color: #58402c;
+}
+
+header a:hover {
+  color: #30488f;
+}
+
+header .main-menu {
+  display: inline-block;
+}
+
+.link-menu {
+  display: inline-block;
+  float: right;
+}
+
+.sign-up {
+  background: #fff;
+  color: #30488f;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  line-height: 30px;
+}
+
+.sign-up:hover {
+  color: white;
+}
+
