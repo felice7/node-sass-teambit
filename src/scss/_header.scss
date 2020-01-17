@@ -1,8 +1,13 @@
 header {
-  width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 20px 0;
   border-bottom: 1px solid #58402c;
-  padding: 20px;
+  font-weight: bold;
+
+  nav {
+    line-height: 35px;
+  }
 
   li {
     display: inline-block;
@@ -15,24 +20,36 @@ header {
   a:hover {
     color: #30488f;
   }
-  .main-menu {
-    display: inline-block;
-  }
-}
-.link-menu {
-  display: inline-block;
-  float: right;
-}
-.sign-up {
-  padding: 0 20px;
-  line-height: 35px;
-  background-color: #30488f;
-  color: white;
-  border-radius: 7px;
-  border: none;
 }
 
+.main-menu {
+  display: inline-block;
+
+  li {
+    margin-right: 40px;
+  }
+}
+
+.links-menu {
+  float: right;
+}
+
+.sub-menu {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#sign-up-btn {
+  background: #fff;
+  border: 1px solid #30488f;
+  border-radius: 10px;
+  color: #30488f;
+  line-height: 35px;
+  padding: 0 20px;
+
   &:hover {
+    background-color: #30488f;
     color: white;
   }
 }

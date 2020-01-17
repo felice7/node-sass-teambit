@@ -1,25 +1,39 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gayathri", sans-serif;
 }
 
-body {
-  color: #58402c;
-  font-family: "Raleway", sans-serif;
+a {
+  text-decoration: none;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
-  display: table;
   clear: both;
+  display: table;
+}
+
+.primary-btn {
+  padding: 10px;
+  line-height: 30px;
+  background-color: #30488f;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
 }
 
 header {
-  width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding: 20px 0;
   border-bottom: 1px solid #58402c;
-  padding: 20px;
+  font-weight: bold;
+}
+
+header nav {
+  line-height: 35px;
 }
 
 header li {
@@ -34,25 +48,77 @@ header a:hover {
   color: #30488f;
 }
 
-header .main-menu {
+.main-menu {
   display: inline-block;
 }
 
-.link-menu {
-  display: inline-block;
+.main-menu li {
+  margin-right: 40px;
+}
+
+.links-menu {
   float: right;
 }
 
-.sign-up {
-  background: #fff;
-  color: #30488f;
-  border-radius: 10px;
-  padding: 10px;
-  border: none;
-  line-height: 30px;
+.sub-menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding: 20px;
 }
 
-.sign-up:hover {
+#sign-up-btn {
+  background: #fff;
+  border: 1px solid #30488f;
+  border-radius: 10px;
+  color: #30488f;
+  line-height: 35px;
+  padding: 0 20px;
+}
+
+#sign-up-btn:hover {
+  background-color: #30488f;
   color: white;
+}
+
+.jumbo {
+  width: 1150px;
+  margin: 100px auto;
+}
+
+.jumbo div {
+  width: 50%;
+  float: left;
+}
+
+.jumbo a:hover {
+  color: #30488f;
+}
+
+.jumbo-text h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.jumbo-text p {
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+
+.jumbo-text span {
+  padding: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.jumbo-text .jumbo-link {
+  display: block;
+  margin-top: 20px;
+}
+
+.jumbo-picture img {
+  width: 100%;
 }
 

@@ -4,43 +4,47 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="public/css/app.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <a href="#"><img src="https://teambit.io/wp-content/themes/teambeat/img/logo.svg" alt=""></a>
-      <div class="link-menu">
+      <a href="#"><img src="https://teambit.io/wp-content/themes/teambeat/img/logo.svg" alt="logo"></a>
+      <div class="links-menu">
         <ul class="main-menu">
           <li>
-            <a href="#">Solution <i class="fas fa-sort-down"></i></a>
-            <ul class="menu-hidden">
-              <li><a href="">Feedback</a></li>
-              <li><a href="">Survey</a></li>
-              <li><a href="">Review</a></li>
-              <li><a href="">Praise</a></li>
+            <a id="dropped-link" href="#">Solutions <i class="fas fa-sort-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Survey</a></li>
+              <li><a href="#">Review</a></li>
+              <li><a href="#">Praise</a></li>
             </ul>
           </li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Sign in</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Sign in</a></li>
         </ul>
-        <button class="sign-up"><i class="fab fa-google"></i>Sign Up</button>
+        <button type="button" id="sign-up-btn"><i class="fab fa-google"></i> Sign up</button>
       </div>
     </nav>
   </header>
-  <div class="jumbo clearfix">
-    <div class="jumbo">
+  <section class="jumbo clearfix">
+    <div class="jumbo-text">
       <h1>Understand, recognize and develop your people</h1>
       <p>Teambit helps teams create a high performing culture with regular feedback.</p>
-      <button class=""><i class="fa fa-google"></i>Sign up with Google</button>
+      <button type="button" class="primary-btn"><i class="fab fa-google"></i> Sign up with Google</button>
       <span>or</span>
-      <button class=""><i class="fa fa-slack-hash"></i>Sign up with Slack</button>
-      <a href="#">or use your email address <i class="fas fa-long-arrow-alt-right"></i></a>
+      <button type="button" class="primary-btn"><i class="fab fa-slack-hash"></i>Sign up with Slack</button>
+      <a class="jumbo-link mt-30" href="#">or use your email address <i class="fas fa-long-arrow-alt-right"></i></a>
     </div>
-    <div class="jumbo-foto"><img src="https://teambit.io/wp-content/themes/teambeat/img/illustration-main.jpg" alt=""></div>
-  </div>
+    <div class="jumbo-picture">
+      <img src="https://teambit.io/wp-content/themes/teambeat/img/illustration-main.jpg" alt="jumbo picture">
+    </div>
+  </section>
 
 </body>
 

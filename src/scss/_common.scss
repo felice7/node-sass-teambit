@@ -1,16 +1,25 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Gayathri', sans-serif;
 }
 
-body {
-  color: #58402c;
-  font-family: 'Raleway', sans-serif;
+a {
+  text-decoration: none;
 }
 
-.clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.primary-btn {
+    padding: 10px;
+    line-height: 30px;
+    background-color: rgb(48, 72, 143);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
 }
