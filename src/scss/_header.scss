@@ -1,11 +1,17 @@
 header {
-  max-width: 1150px;
-  margin: 0 auto;
+  position: fixed;
+  height: 80px;
+  background-color: $color_white;
+  border-bottom: 1px solid #bdb5af;
   padding: 20px 0;
-  border-bottom: 1px solid #58402c;
-  font-weight: bold;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
 
   nav {
+    width: 1150px;
+    margin: 0 auto;
     line-height: 35px;
   }
 
@@ -14,11 +20,14 @@ header {
   }
 
   a {
-    color: #58402c;
+    color: $text_color;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   a:hover {
-    color: #30488f;
+    color: #24376d;
   }
 }
 
@@ -26,30 +35,49 @@ header {
   display: inline-block;
 
   li {
-    margin-right: 40px;
+    margin-right: 20px;
   }
 }
 
 .links-menu {
+  display: inline-block;
   float: right;
 }
 
-.sub-menu {
-  display: none;
-  flex-direction: column;
-  padding: 20px;
-}
-
 #sign-up-btn {
-  background: #fff;
-  border: 1px solid #30488f;
-  border-radius: 10px;
+  background: $color_white;
   color: #30488f;
+  border: 1px solid #30488f;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 10px;
   line-height: 35px;
-  padding: 0 20px;
+  border-radius: 7px;
+  margin-left: 20px;
 
   &:hover {
-    background-color: #30488f;
-    color: white;
+    background-color: #25386f;
+    color: $color_white;
   }
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  padding-bottom: 10px;
+}
+
+.dropdown:hover .sub-menu {
+  display: flex;
+}
+
+.sub-menu {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 3px 0;
+  border-radius: 7px;
+  background-color: $color_white;
 }

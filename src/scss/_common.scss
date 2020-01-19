@@ -1,7 +1,11 @@
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  color: $text_color;
   font-family: 'Gayathri', sans-serif;
 }
 
@@ -9,17 +13,37 @@ a {
   text-decoration: none;
 }
 
-.clearfix::after {
-    content: '';
-    clear: both;
-    display: table;
+.hidden {
+  display: none;
 }
 
-.primary-btn {
-    padding: 10px;
-    line-height: 30px;
-    background-color: rgb(48, 72, 143);
-    color: #fff;
-    border-radius: 10px;
-    border: none;
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.login-btn {
+  padding: 0 20px;
+  line-height: 35px;
+  background-color: #30488f;
+  color: $color_white;
+  border-radius: 7px;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #24376d;
+}
+
+button {
+  cursor: pointer;
+}
+
+.margin_top_30 {
+  margin-top: 30px;
+}
+
+.margin_bottom_30 {
+  margin-bottom: 30px;
 }
